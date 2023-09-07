@@ -3,7 +3,7 @@ import "dotenv/config";
 
 // configuracion de la conexion a la base de datos
 const db = new Sequelize({
-  server: /* "localhost", */ process.env.DB_SERVER,
+  host: /* "localhost", */ process.env.DB_SERVER,
   username: /* "postgres", */ process.env.DB_USERNAME,
   database: /* "todos", */ process.env.DB_DATABASE,
   port: /* 5432, */ process.env.DB_PORT,
